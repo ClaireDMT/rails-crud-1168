@@ -1,0 +1,9 @@
+<h1>All restaurants!</h1>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <p><%= restaurant.name %> - <%= restaurant.rating %></p>
+    </li>
+  <% end %>
+</ul>
